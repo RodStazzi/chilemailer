@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Server con NodeMailer</title>
+</head>
+
+<body>
+
+  <form action="/enviar">
+    <div class="resultado" style="color: green; font-style: italic"></div>
+    <h2>Enviar Correo</h2>
+    <div class="form-wrap">
+      <label>Para</label>
+      <input id="mail" type="text" name="to">
+      <p class="errorMail" style="color: red; font-style: italic"></p>
+    </div>
+
+    <div class="form-wrap">
+      <label>Asunto</label>
+      <input id="asunto" type="text" name="subject">
+      <p class="errorAsunto" style="color: red; font-style: italic"></p>
+    </div>
+
+    <div class="form-wrap">
+      <label>Texto</label>
+      <textarea id="texto" name="text"></textarea>
+      <p class="errorTexto" style="color: red; font-style: italic"></p>
+    </div>
+
+
+
+    <button type="submit">Enviar</button>
+
+  </form>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
