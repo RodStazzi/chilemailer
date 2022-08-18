@@ -4,7 +4,7 @@ const http = require("http");
 const url = require("url");
 const fs = require("fs");
 
-const port = process.env.PORT || 3000;
+const port = 0.0.0.0:PORT || 3000;
 
 const server = http.createServer((request, response) => {
   const params = url.parse(request.url, true).query;
