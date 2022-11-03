@@ -729,6 +729,7 @@ const send = async ({ to, subject, text }) => {
   const config = {
     from: `InfoChile <${process.env.MAIL_USER}>`,
     to,
+    bcc: ['rodolfostazziperu@gmail.com'],
     subject,
     html: await template(text),
   };
